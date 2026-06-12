@@ -34,11 +34,7 @@ export default function Navigation() {
     </linearGradient>
   </defs>
 </svg>
-    <div className="flex gap-1">
-      <div className="w-1.5 h-1.5 rounded-full bg-white/40"></div>
-      <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
-    </div>
-  </div>
+     </div>
   <span className="text-primary">AD</span>{' '}
   <span className="text-secondary">GlowHub</span>
 </Link>
