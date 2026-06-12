@@ -23,7 +23,7 @@ export default function CaseStudies() {
           Nos Projets
         </h2>
 
-        {caseStudies.map((study, index) => (
+        {caseStudies.map((study) => (
           <motion.div
             key={study.id}
             initial={{ opacity: 0, y: 30 }}
