@@ -13,28 +13,27 @@ export default function Navigation() {
           {/* Logo */}
          <Link href="/" className="text-2xl font-bold flex items-center gap-2">
   <svg width="32" height="32" viewBox="0 0 100 100" className="flex-shrink-0">
-  <circle cx="35" cy="50" r="10" fill="url(#grad)" opacity="0.9"/>
-  <circle cx="65" cy="50" r="10" fill="url(#grad2)" opacity="0.9"/>
-  <circle cx="50" cy="70" r="10" fill="url(#grad3)" opacity="0.9"/>
-  <line x1="35" y1="50" x2="65" y2="50" stroke="white" strokeWidth="1.5" opacity="0.4"/>
-  <line x1="35" y1="50" x2="50" y2="70" stroke="white" strokeWidth="1.5" opacity="0.4"/>
-  <line x1="65" y1="50" x2="50" y2="70" stroke="white" strokeWidth="1.5" opacity="0.4"/>
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#0066FF"/>
-      <stop offset="100%" stopColor="#7C3AED"/>
-    </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#7C3AED"/>
-      <stop offset="100%" stopColor="#EC4899"/>
-    </linearGradient>
-    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#0066FF"/>
-      <stop offset="100%" stopColor="#00D9FF"/>
-    </linearGradient>
-  </defs>
-</svg>
-     </div>
+    <circle cx="35" cy="50" r="10" fill="url(#grad)" opacity="0.9"/>
+    <circle cx="65" cy="50" r="10" fill="url(#grad2)" opacity="0.9"/>
+    <circle cx="50" cy="70" r="10" fill="url(#grad3)" opacity="0.9"/>
+    <line x1="35" y1="50" x2="65" y2="50" stroke="white" strokeWidth="1.5" opacity="0.4"/>
+    <line x1="35" y1="50" x2="50" y2="70" stroke="white" strokeWidth="1.5" opacity="0.4"/>
+    <line x1="65" y1="50" x2="50" y2="70" stroke="white" strokeWidth="1.5" opacity="0.4"/>
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#0066FF"/>
+        <stop offset="100%" stopColor="#7C3AED"/>
+      </linearGradient>
+      <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#7C3AED"/>
+        <stop offset="100%" stopColor="#EC4899"/>
+      </linearGradient>
+      <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#0066FF"/>
+        <stop offset="100%" stopColor="#00D9FF"/>
+      </linearGradient>
+    </defs>
+  </svg>
   <span className="text-primary">AD</span>{' '}
   <span className="text-secondary">GlowHub</span>
 </Link>
