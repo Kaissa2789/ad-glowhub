@@ -18,14 +18,29 @@ export default function Portfolio() {
               title: 'Chez Manman',
               category: 'Site Vitrine',
               description: 'Site vitrine pour restaurant de cuisine antillaise',
+              image: '/chez-manman-cover.jpg',
+              url: 'https://chezmanman.fr',
             },
           ].map((project, idx) => (
-            <div key={idx} className="p-6 bg-gray-900 rounded-lg border border-gray-700 hover:border-primary transition cursor-pointer">
-              <div className="h-40 bg-gradient-to-br from-primary to-secondary rounded-lg mb-4"></div>
+            <a
+              key={idx}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-6 bg-gray-900 rounded-lg border border-gray-700 hover:border-primary transition cursor-pointer block"
+            >
+              <div className="h-40 rounded-lg mb-4 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="text-primary text-sm font-semibold mb-2">{project.category}</p>
-              <p className="text-gray-400">{project.description}</p>
-            </div>
+              <p className="text-gray-400 mb-3">{project.description}</p>
+              <p className="text-sm text-primary font-semibold">Voir le site →</p>
+            </a>
           ))}
 
           {/* Placeholder "coming soon" card */}
