@@ -12,7 +12,7 @@ export default function CaseStudies() {
         'Création d\'un site vitrine complet pour un restaurant de cuisine antillaise. Storytelling authentique, présentation du menu, témoignages clients, et déploiement optimisé pour la rapidité et le référencement local.',
       technologies: ['React', 'TypeScript', 'TanStack Router', 'Cloudflare Pages'],
       results: ['Site 100% responsive', 'Référencement local optimisé', 'Temps de chargement < 1s'],
-      image: '🍽️',
+      image: '/images/chez-manman-cover.jpg',
     },
   ]
 
@@ -33,8 +33,12 @@ export default function CaseStudies() {
           >
             <div className="grid md:grid-cols-2 gap-8 p-8">
               {/* Image Section */}
-              <div className="flex items-center justify-center bg-gradient-to-br from-primary to-secondary p-12 rounded-lg">
-                <div className="text-9xl">{study.image}</div>
+              <div className="flex items-center justify-center rounded-lg overflow-hidden">
+                <img
+                  src={study.image}
+                  alt={study.title}
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
 
               {/* Content Section */}
