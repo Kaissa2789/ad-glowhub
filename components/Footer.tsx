@@ -67,8 +67,8 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="text-sm text-gray-400 mb-2">Paris, France</p>
-            <p className="text-sm text-gray-400">hello@ad-glowhub.fr</p>
+            <p className="text-sm text-gray-400 mb-2">29, rue Tronchet 75008 Paris</p>
+<p className="text-sm text-gray-400">contact@ad-glowhub.fr</p>
           </div>
         </div>
 
