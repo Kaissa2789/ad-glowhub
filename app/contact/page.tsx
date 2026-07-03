@@ -34,11 +34,9 @@ export default function Contact() {
           Discutons de votre projet et comment nous pouvons vous aider.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {[
-            { title: 'Email', value: 'hello@ad-glowhub.fr' },
-            { title: 'Téléphone', value: '+33 1 XX XX XX XX' },
-            { title: 'Localisation', value: 'Paris, France' },
+<div className="grid md:grid-cols-2 gap-8 mb-16">          {[
+           { title: 'Email', value: 'contact@ad-glowhub.fr' },
+{ title: 'Localisation', value: '29 rue Tronchet, 75008 Paris' },
           ].map((contact, idx) => (
             <div key={idx} className="p-6 bg-gray-900 rounded-lg border border-gray-700">
               <p className="text-gray-400 text-sm mb-2">{contact.title}</p>
