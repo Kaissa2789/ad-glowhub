@@ -15,19 +15,9 @@ export default function Portfolio() {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: 'The Beauty Spot',
-              category: 'SaaS Marketplace',
-              description: 'Plateforme de réservation pour professionnels de beauté',
-            },
-            {
-              title: 'Projet 2',
-              category: 'E-commerce',
-              description: 'Solution d\'e-commerce moderne et performante',
-            },
-            {
-              title: 'Projet 3',
-              category: 'Corporate',
-              description: 'Site corporate pour grande entreprise',
+              title: 'Chez Manman',
+              category: 'Site Vitrine',
+              description: 'Site vitrine pour restaurant de cuisine antillaise',
             },
           ].map((project, idx) => (
             <div key={idx} className="p-6 bg-gray-900 rounded-lg border border-gray-700 hover:border-primary transition cursor-pointer">
@@ -37,6 +27,11 @@ export default function Portfolio() {
               <p className="text-gray-400">{project.description}</p>
             </div>
           ))}
+
+          {/* Placeholder "coming soon" card */}
+          <div className="p-6 bg-gray-900/50 rounded-lg border border-dashed border-gray-700 flex flex-col items-center justify-center text-center min-h-[280px]">
+            <p className="text-gray-500 text-sm">Prochains projets à venir</p>
+          </div>
         </div>
       </div>
     </div>
