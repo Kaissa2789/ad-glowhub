@@ -1,4 +1,4 @@
-'use client'
+use client'
 
 import { motion } from 'framer-motion'
 
@@ -6,13 +6,13 @@ export default function CaseStudies() {
   const caseStudies = [
     {
       id: 1,
-      title: 'The Beauty Spot',
-      subtitle: 'Plateforme de réservation pour professionnels de beauté',
+      title: 'Chez Manman',
+      subtitle: 'Site vitrine pour restaurant antillais',
       description:
-        'Création d\'une plateforme de booking SaaS pour connecter les clients avec les professionnels de beauté indépendants. Design moderne, paiements en temps réel, et expérience utilisateur optimisée.',
-      technologies: ['Next.js', 'React', 'Stripe', 'PostgreSQL'],
-      results: ['500K€ projections Q4 2026', '1000+ signups first week', 'Taux de conversion 12%'],
-      image: '🌟',
+        'Création d\'un site vitrine complet pour un restaurant de cuisine antillaise. Storytelling authentique, présentation du menu, témoignages clients, et déploiement optimisé pour la rapidité et le référencement local.',
+      technologies: ['React', 'TypeScript', 'TanStack Router', 'Cloudflare Pages'],
+      results: ['Site 100% responsive', 'Référencement local optimisé', 'Temps de chargement < 1s'],
+      image: '🍽️',
     },
   ]
 
