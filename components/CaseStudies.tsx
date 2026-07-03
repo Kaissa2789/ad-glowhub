@@ -12,7 +12,7 @@ export default function CaseStudies() {
         'Création d\'un site vitrine complet pour un restaurant de cuisine antillaise. Storytelling authentique, présentation du menu, témoignages clients, et déploiement optimisé pour la rapidité et le référencement local.',
       technologies: ['React', 'TypeScript', 'TanStack Router', 'Cloudflare Pages'],
       results: ['Site 100% responsive', 'Référencement local optimisé', 'Temps de chargement < 1s'],
-      image: '/images/chez-manman-cover.jpg',
+      image: '/chez-manman-cover.jpg',
     },
   ]
 
