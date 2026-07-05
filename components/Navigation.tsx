@@ -55,10 +55,7 @@ export default function Navigation() {
             <Link href="/blog" className="hover:text-primary transition">
               Blog
             </Link>
-            <Link
-              href="/contact"
-              className="btn-gradient px-6 py-2 rounded-lg text-white"
-            >
+            <Link href="/contact" className="btn-primary text-sm">
               Contact
             </Link>
           </div>
