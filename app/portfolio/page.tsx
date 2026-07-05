@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen pt-20 pb-12">
+    <div className="min-h-screen pt-36 pb-12">
       <div className="max-w-7xl mx-auto px-4">
         <p className="eyebrow mb-3">Réalisations</p>
         <h1 className="font-display text-5xl font-medium mb-8">Portfolio</h1>
