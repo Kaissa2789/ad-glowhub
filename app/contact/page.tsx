@@ -98,10 +98,7 @@ export default function Contact() {
             />
           </div>
 
-          <button
-            type="submit"
-            className="w-full btn-gradient px-6 py-3 rounded-lg font-semibold text-white"
-          >
+          <button type="submit" className="w-full btn-primary">
             Envoyer le message
           </button>
         </form>
