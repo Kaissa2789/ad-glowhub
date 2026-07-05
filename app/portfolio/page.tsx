@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen pt-20 pb-12">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-5xl font-bold mb-8">Portfolio</h1>
+        <h1 className="font-display text-5xl font-medium mb-8">Portfolio</h1>
         <p className="text-gray-400 text-lg mb-16">
           Projets réalisés pour nos clients, showcasing expertise et créativité.
         </p>
