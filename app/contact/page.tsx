@@ -29,6 +29,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen pt-20 pb-12">
       <div className="max-w-4xl mx-auto px-4">
+        <p className="eyebrow mb-3">Contact</p>
         <h1 className="font-display text-5xl font-medium mb-8">Contactez-nous</h1>
         <p className="text-gray-400 text-lg mb-16">
           Discutons de votre projet et comment nous pouvons vous aider.
@@ -57,7 +58,7 @@ export default function Contact() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-primary outline-none transition text-white"
+              className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-gold outline-none transition text-white"
               required
             />
           </div>
@@ -69,7 +70,7 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-primary outline-none transition text-white"
+              className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-gold outline-none transition text-white"
               required
             />
           </div>
@@ -81,7 +82,7 @@ export default function Contact() {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-primary outline-none transition text-white"
+              className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-gold outline-none transition text-white"
               required
             />
           </div>
@@ -93,7 +94,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               rows={5}
-              className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-primary outline-none transition text-white"
+              className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-gold outline-none transition text-white"
               required
             />
           </div>
