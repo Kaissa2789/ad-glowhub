@@ -148,10 +148,7 @@ export default function Services() {
             <p className="text-gray-400 mb-4">
               Boutique en ligne ou plateforme multi-vendeurs : chaque projet est unique, parlons-en ensemble.
             </p>
-            <a
-              href="/contact"
-              className="inline-block px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition"
-            >
+            <a href="/contact" className="btn-primary">
               Nous contacter
             </a>
           </div>
