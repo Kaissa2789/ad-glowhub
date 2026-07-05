@@ -7,6 +7,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen pt-20 pb-12">
       <div className="max-w-7xl mx-auto px-4">
+        <p className="eyebrow mb-3">Réalisations</p>
         <h1 className="font-display text-5xl font-medium mb-8">Portfolio</h1>
         <p className="text-gray-400 text-lg mb-16">
           Projets réalisés pour nos clients, showcasing expertise et créativité.
@@ -27,7 +28,7 @@ export default function Portfolio() {
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-6 bg-gray-900 rounded-lg border border-gray-700 hover:border-primary transition cursor-pointer block"
+              className="p-6 bg-gray-900 rounded-lg border border-gray-700 hover:border-gold/40 transition cursor-pointer block"
             >
               <div className="h-40 rounded-lg mb-4 overflow-hidden">
                 <img
@@ -36,10 +37,10 @@ export default function Portfolio() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-primary text-sm font-semibold mb-2">{project.category}</p>
+              <h3 className="font-display text-xl font-medium mb-2">{project.title}</h3>
+              <p className="italic text-gold text-sm mb-2">{project.category}</p>
               <p className="text-gray-400 mb-3">{project.description}</p>
-              <p className="text-sm text-primary font-semibold">Voir le site →</p>
+              <p className="text-sm text-gold font-medium">Voir le site →</p>
             </a>
           ))}
 
