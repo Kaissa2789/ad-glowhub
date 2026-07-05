@@ -29,37 +29,38 @@ export default function CaseStudies() {
             key={study.id}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-16 overflow-hidden rounded-xl border border-gray-700 bg-gray-900"
+            className="mb-16 overflow-hidden rounded-xl border border-gray-800 bg-gray-900/60 hover:border-gold/30 transition-colors duration-500"
           >
             <div className="grid md:grid-cols-2 gap-8 p-8">
               {/* Image Section */}
-              <div className="flex items-center justify-center rounded-lg overflow-hidden">
+              <div className="flex items-center justify-center rounded-lg overflow-hidden border border-gray-800">
                 <img
                   src={study.image}
                   alt={study.title}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
               {/* Content Section */}
               <div className="flex flex-col justify-center">
                 <h3 className="font-display text-3xl font-medium mb-2">{study.title}</h3>
-                <p className="text-primary text-lg font-semibold mb-4">
+                <p className="italic text-gold text-lg mb-4">
                   {study.subtitle}
                 </p>
                 <p className="text-gray-300 mb-6">{study.description}</p>
 
                 {/* Technologies */}
                 <div className="mb-6">
-                  <p className="text-sm font-semibold text-gray-400 mb-2">
+                  <p className="text-sm font-semibold text-gray-500 mb-2">
                     Technologies
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {study.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 rounded-full bg-primary bg-opacity-10 text-primary text-sm"
+                        className="px-3 py-1 rounded-full border border-gray-700 text-gray-300 text-sm"
                       >
                         {tech}
                       </span>
@@ -69,16 +70,16 @@ export default function CaseStudies() {
 
                 {/* Results */}
                 <div>
-                  <p className="text-sm font-semibold text-gray-400 mb-2">
+                  <p className="text-sm font-semibold text-gray-500 mb-2">
                     Résultats
                   </p>
-                  <ul className="space-y-1">
+                  <ul className="space-y-1.5">
                     {study.results.map((result, idx) => (
                       <li
                         key={idx}
                         className="text-sm text-gray-300 flex items-start"
                       >
-                        <span className="text-primary mr-2">✓</span>
+                        <span className="text-gold mr-2">✓</span>
                         {result}
                       </li>
                     ))}
