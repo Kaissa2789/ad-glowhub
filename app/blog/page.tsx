@@ -26,7 +26,7 @@ export default function Blog() {
   ]
 
   return (
-    <div className="min-h-screen pt-20 pb-12">
+    <div className="min-h-screen pt-36 pb-12">
       <div className="max-w-4xl mx-auto px-4">
         <p className="eyebrow mb-3">Journal</p>
         <h1 className="font-display text-5xl font-medium mb-8">Blog</h1>
