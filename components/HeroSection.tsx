@@ -42,16 +42,10 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Link
-            href="/contact"
-            className="btn-gradient px-8 py-4 rounded-lg font-semibold text-white"
-          >
+          <Link href="/contact" className="btn-primary">
             Démarrer un projet
           </Link>
-          <Link
-            href="/portfolio"
-            className="px-8 py-4 rounded-lg font-semibold border border-gold/50 text-gold hover:bg-gold hover:text-dark transition"
-          >
+          <Link href="/portfolio" className="btn-secondary">
             Voir nos projets
           </Link>
         </motion.div>
