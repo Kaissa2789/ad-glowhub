@@ -19,7 +19,8 @@ export default function CaseStudies() {
   return (
     <section className="py-20 px-4 bg-dark">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16">
+        <p className="eyebrow text-center mb-3">Réalisations</p>
+        <h2 className="font-display text-4xl font-medium text-center mb-16">
           Nos Projets
         </h2>
 
@@ -43,7 +44,7 @@ export default function CaseStudies() {
 
               {/* Content Section */}
               <div className="flex flex-col justify-center">
-                <h3 className="text-3xl font-bold mb-2">{study.title}</h3>
+                <h3 className="font-display text-3xl font-medium mb-2">{study.title}</h3>
                 <p className="text-primary text-lg font-semibold mb-4">
                   {study.subtitle}
                 </p>
