@@ -11,11 +11,13 @@ const config: Config = {
       colors: {
         primary: '#0066FF',
         secondary: '#7C3AED',
+        gold: '#D4A15C',
         dark: '#111827',
         light: '#F3F4F6',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        serif: ['Fraunces', 'serif'],
       },
       boxShadow: {
         premium: '0 10px 40px rgba(0, 102, 255, 0.1)',
