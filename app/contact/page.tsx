@@ -29,14 +29,15 @@ export default function Contact() {
   return (
     <div className="min-h-screen pt-20 pb-12">
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl font-bold mb-8">Contactez-nous</h1>
+        <h1 className="font-display text-5xl font-medium mb-8">Contactez-nous</h1>
         <p className="text-gray-400 text-lg mb-16">
           Discutons de votre projet et comment nous pouvons vous aider.
         </p>
 
-<div className="grid md:grid-cols-2 gap-8 mb-16">          {[
-           { title: 'Email', value: 'contact@ad-glowhub.fr' },
-{ title: 'Localisation', value: '29 rue Tronchet, 75008 Paris' },
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {[
+            { title: 'Email', value: 'contact@ad-glowhub.fr' },
+            { title: 'Localisation', value: '29 rue Tronchet, 75008 Paris' },
           ].map((contact, idx) => (
             <div key={idx} className="p-6 bg-gray-900 rounded-lg border border-gray-700">
               <p className="text-gray-400 text-sm mb-2">{contact.title}</p>
