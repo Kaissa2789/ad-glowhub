@@ -7,7 +7,7 @@ export default function Services() {
   return (
     <div className="min-h-screen pt-20 pb-12">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-5xl font-bold mb-8">Nos Services</h1>
+        <h1 className="font-display text-5xl font-medium mb-8">Nos Services</h1>
         <p className="text-gray-400 text-lg mb-16">
           Solutions digitales complètes pour transformer votre vision en réalité.
         </p>
@@ -44,7 +44,7 @@ export default function Services() {
 
         {/* ===== TARIFS ===== */}
         <div className="mb-16">
-          <h2 className="text-4xl font-bold mb-4">Nos Tarifs</h2>
+          <h2 className="font-display text-4xl font-medium mb-4">Nos Tarifs</h2>
           <p className="text-gray-400 text-lg mb-12">
             Des formules transparentes adaptées à chaque projet.
           </p>
