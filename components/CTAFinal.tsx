@@ -42,10 +42,7 @@ export default function CTAFinal() {
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
         >
-          <Link
-            href="/contact"
-            className="inline-block px-10 py-4 rounded-lg font-semibold bg-gold text-dark hover:opacity-90 transition"
-          >
+          <Link href="/contact" className="btn-gold">
             Planifier une consultation
           </Link>
         </motion.div>
