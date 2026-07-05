@@ -7,6 +7,7 @@ export default function Services() {
   return (
     <div className="min-h-screen pt-20 pb-12">
       <div className="max-w-7xl mx-auto px-4">
+        <p className="eyebrow mb-3">Ce que nous proposons</p>
         <h1 className="font-display text-5xl font-medium mb-8">Nos Services</h1>
         <p className="text-gray-400 text-lg mb-16">
           Solutions digitales complètes pour transformer votre vision en réalité.
@@ -36,7 +37,7 @@ export default function Services() {
             },
           ].map((service, idx) => (
             <div key={idx} className="p-8 bg-gray-900 rounded-lg border border-gray-700">
-              <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+              <h3 className="font-display text-2xl font-medium mb-4">{service.title}</h3>
               <p className="text-gray-400">{service.description}</p>
             </div>
           ))}
@@ -44,6 +45,7 @@ export default function Services() {
 
         {/* ===== TARIFS ===== */}
         <div className="mb-16">
+          <p className="eyebrow mb-3">Tarification</p>
           <h2 className="font-display text-4xl font-medium mb-4">Nos Tarifs</h2>
           <p className="text-gray-400 text-lg mb-12">
             Des formules transparentes adaptées à chaque projet.
@@ -51,7 +53,7 @@ export default function Services() {
 
           {/* Sites vitrines */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6 text-primary">Sites Vitrines</h3>
+            <h3 className="text-sm font-semibold tracking-wide uppercase text-gold mb-6">Sites Vitrines</h3>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
@@ -75,12 +77,12 @@ export default function Services() {
                   key={idx}
                   className={`p-8 rounded-lg border ${
                     plan.featured
-                      ? 'bg-gray-900 border-primary shadow-premium'
+                      ? 'bg-gray-900 border-gold/50 shadow-premium'
                       : 'bg-gray-900 border-gray-700'
                   }`}
                 >
-                  <h4 className="text-xl font-bold mb-2">{plan.name}</h4>
-                  <p className="text-2xl font-bold text-primary mb-4">{plan.price}</p>
+                  <h4 className="text-xl font-semibold mb-2">{plan.name}</h4>
+                  <p className="text-2xl font-semibold text-gold mb-4">{plan.price}</p>
                   <p className="text-gray-400 text-sm">{plan.desc}</p>
                 </div>
               ))}
@@ -89,7 +91,7 @@ export default function Services() {
 
           {/* Refonte */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6 text-primary">Refonte de Site Existant</h3>
+            <h3 className="text-sm font-semibold tracking-wide uppercase text-gold mb-6">Refonte de Site Existant</h3>
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
@@ -104,8 +106,8 @@ export default function Services() {
                 },
               ].map((plan, idx) => (
                 <div key={idx} className="p-8 bg-gray-900 rounded-lg border border-gray-700">
-                  <h4 className="text-xl font-bold mb-2">{plan.name}</h4>
-                  <p className="text-2xl font-bold text-primary mb-4">{plan.price}</p>
+                  <h4 className="text-xl font-semibold mb-2">{plan.name}</h4>
+                  <p className="text-2xl font-semibold text-gold mb-4">{plan.price}</p>
                   <p className="text-gray-400 text-sm">{plan.desc}</p>
                 </div>
               ))}
@@ -114,7 +116,7 @@ export default function Services() {
 
           {/* Services récurrents */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6 text-primary">Services Récurrents</h3>
+            <h3 className="text-sm font-semibold tracking-wide uppercase text-gold mb-6">Services Récurrents</h3>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
@@ -134,8 +136,8 @@ export default function Services() {
                 },
               ].map((plan, idx) => (
                 <div key={idx} className="p-8 bg-gray-900 rounded-lg border border-gray-700">
-                  <h4 className="text-xl font-bold mb-2">{plan.name}</h4>
-                  <p className="text-2xl font-bold text-primary mb-4">{plan.price}</p>
+                  <h4 className="text-xl font-semibold mb-2">{plan.name}</h4>
+                  <p className="text-2xl font-semibold text-gold mb-4">{plan.price}</p>
                   <p className="text-gray-400 text-sm">{plan.desc}</p>
                 </div>
               ))}
@@ -144,7 +146,7 @@ export default function Services() {
 
           {/* E-commerce sur devis */}
           <div className="p-8 bg-gray-900/50 rounded-lg border border-dashed border-gray-700 text-center">
-            <h3 className="text-xl font-bold mb-2">E-commerce & Marketplace</h3>
+            <h3 className="font-display text-xl font-medium mb-2">E-commerce & Marketplace</h3>
             <p className="text-gray-400 mb-4">
               Boutique en ligne ou plateforme multi-vendeurs : chaque projet est unique, parlons-en ensemble.
             </p>
