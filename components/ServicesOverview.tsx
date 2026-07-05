@@ -29,7 +29,8 @@ export default function ServicesOverview() {
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-dark to-gray-900">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <p className="eyebrow text-center mb-3">Ce qu'on fait</p>
+        <h2 className="font-display text-4xl font-medium text-center mb-12">
           Nos Services
         </h2>
 
@@ -40,7 +41,7 @@ export default function ServicesOverview() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="p-6 rounded-lg bg-gray-800 hover:bg-gray-700 transition border border-gray-700"
+              className="p-6 rounded-lg bg-gray-800 hover:bg-gray-700 transition border border-gray-700 hover:border-gold/40"
             >
               <div className="text-4xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
